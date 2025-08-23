@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: rgb(0, 0, 0); 
+    
+}
+.logo{
+    background-image: url('logo godecor.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+.navoption{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: -2rem;
+}
+.navlasticon{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+.searchbar{
+    height: 30px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Style the dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.herosectiontext{
+    padding-top: 100px;
+    height:600px;
+    width: 100%;
+    background-color: white;
+  backdrop-filter: blur(10px);                
+  border-radius: 10px;                        
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#htext{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background: linear-gradient(90deg, #000 0%, #333030 50%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+#herosectionbelowtext{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-family:  sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#shopCollectionBtn{
+    width: 250px;
+    margin: 30px;
+    padding: 12px 32px; 
+    background-color: #f8772c;
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#shopCollectionBtn:hover {
+    transform: scale(1.07);
+}
+#exploreCategoryBtn {
+    margin: 30px;
+    padding: 12px 32px; 
+    background-color: #ffffff;
+    color: #000000; 
+    border: black 2px solid; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#exploreCategoryBtn:hover {
+    transform: scale(1.07);
+    background-color: #000;
+    color: #ffffff;
+    border: white 3px solid;
+}
+#shopByCategoryTitle{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 90px ;
+    color: #000000;
+    font-family:  sans-serif;
+    font-weight: 800;
+    line-height: 0.6;
+}
+#shopByCategoryDescription{
+    margin:20px;
+     font-size: 20px;
+    text-align: center;
+    padding-top: -10px;
+    color: #333;
+    font-family:  sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+.photodiv{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 1px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.first{
+        background-position: center;
+        padding-top: -10px;
+        width: 35%;
+        height: 500px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+}
+.second{       
+        background-position: center;
+        width: 35%;
+        height: 500px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+}
+#Description{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    font-family:  sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#ExploreNowBtn{
+    margin-left: 80px;
+    padding-left: 50px;
+    width: 300px;
+    margin-top: 26px;
+    padding: 10px 20px;
+    background-color: #e73dec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#ExploreNowBtn:hover{
+  transform: scale(1.07);
+}
+.middlesection .middle-item:hover .add-to-cart-btn {
+    opacity: 1 !important;
+}
+.middlesection{
+    height:2000px;
+    width: 100%;
+    background-color: white;
+
+}
+.middle-item{
+    flex: 1;
+     position: relative;
+      height: 270px;
+       border-radius: 12px; 
+       overflow: hidden; 
+       background: #f5f5f5;
+}
+.add-to-cart-btn{
+    width: 200px;
+    position: absolute;
+    bottom: 16px; 
+    left: 50%;
+     transform: translateX(-50%); 
+     background: #7e4d4d; 
+     color: #fff; 
+     border: none; 
+     padding: 8px 20px; 
+     border-radius: 8px; 
+     opacity: 0; 
+     transition: opacity 0.2s; 
+     cursor: pointer;
+}
+.smallcoast{
+    height:20px;
+    width:60px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    ;
+
+}
+#heart10{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    font-size: 22px;
+    color: #fffefe;
+     cursor: pointer;
+     transition: color 0.2s;
+
+}

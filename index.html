@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GODECOR</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+
+        <div class="navoption">
+        <a href="#home" style="color: white; text-decoration: none;">Home</a>
+        <a href="#homedecor" style="color: white; text-decoration: none;">Home Decor</a>
+        <a href="#jewelry" style="color: white; text-decoration: none;">Jewelry</a>
+        </div>
+        
+        <button class="searchbar" id="searchBtn" style="position: relative;">
+            <i class="fa-solid fa-magnifying-glass" style="color: white; padding-left: 90%; position: relative; top: -3px;"></i>
+            <span id="searchText" style="color: rgba(255,255,255,0.6); position: absolute; left: 20px; top: 50%; transform: translateY(-50%); font-size: 14px; opacity: 0; transition: opacity 0.2s;">search your product</span>
+        </button>
+       
+
+        <div class="navlasticon" style="display: flex; align-items: center;">
+            <div class="theme-toggle" style="display: flex; align-items: center; position: relative;">
+                <i class="fa-solid fa-moon" id="darkModeIcon" style="color: white; cursor: pointer; margin-right: 8px;"></i>
+                <i class="fa-regular fa-sun" id="lightModeIcon" style="color: white; cursor: pointer; display: none; margin-right: 8px;"></i>
+                <span id="lightText" style="color: white; display: none; margin-right: 16px;">Light Theme</span>
+                <div id="themeOptions" style="display: none; position: absolute; top: 30px; right: 0; background: #222; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 10;">
+                <button id="setDark" style="background: none; border: none; color: white; padding: 8px 16px; cursor: pointer; width: 100%; text-align: left; display: flex; align-items: center;">
+                <i class="fa-solid fa-moon" style="margin-right: 8px;"></i> 
+                <span>Dark </span>
+                </button>
+                <button id="setLight" style="background: none; border: none; color: white; padding: 8px 16px; cursor: pointer; width: 100%; text-align: left; display: flex; align-items: center; ">
+                <i class="fa-regular fa-sun" style="margin-right: 8px;"></i> 
+                <span>Light</span>
+                </button>
+                </div>
+            </div>
+            <i class="fa-solid fa-heart" style="color: white; margin-left: 16px;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: white; margin-left: 16px;"></i>
+            <i class="fa-solid fa-user" style="color: white; margin-left: 16px;"></i>
+        </div>
+</div>
+
+    <!-- <img id="heroImage" src="men2.jpg" alt="Hero Slide" style="width: 100%; height: 400px; object-fit: cover; display: block;margin:0px;padding: 0%;"> -->
+ 
+</div>
+<div class="slideshow-container" style="max-width: 100%; position: relative; margin: auto;">
+
+    <div class="mySlides fade">
+        <img src="women2.jpg" style="width:100%; height: 400px;">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="men1.jpg" style="width:100%; height: 400px;">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="home2.jpg" style="width:100%; height: 400px;">
+    </div>
+
+     <div class="mySlides fade">
+        <img src="women1.jpg" style="width:100%; height: 400px;">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="homedecor1.jpg" style="width:100% ; height: 400px;">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="men2.jpg" style="width:100%; height: 400px;">
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+    
+</div>
+<!-- // HERO SECTION -->
+<div class="herosectiontext">
+    <h1  id="htext">Transform Your</h1>
+    <h1  id="htext">Beautiful Space</h1>
+    <p  id="herosectionbelowtext"style="text-align: center;">
+        Discover our curated collection of premium home decor and <br>
+        elegant jewelry. From modern minimalist designs to timeless <br>
+        classics, find pieces that reflect your unique style.
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 24px;">
+        <button id="shopCollectionBtn">
+            SHOP COLLECTION
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button id="exploreCategoryBtn">
+            EXPLORE CATEGORY
+             <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+<h1 id="shopByCategoryTitle">Shop by Category</h1>
+<p id="shopByCategoryDescription">Explore our carefully curated collections designed to enhance your lifestyle <br>and express your unique personality.</p>
+
+<div class="photodiv">
+    <div class="first" style="position: relative;">
+        <img src="home3.webp" alt="home" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+        <!-- Overlay Texts -->
+        <div style="position: absolute; top: 235px; left: 332px; color: rgb(85, 55, 64); font-size: 17px; font-weight: 700; padding: 8px 16px;">
+            100+ product
+        </div>
+        <div style="position: absolute; bottom: 210px; left: 332px; color: rgb(85, 55, 64); font-size: 19px; font-weight: 700; padding: 6px 14px;">
+            Home Decor
+        </div>
+        `<p id="Description">Transform your living space with our curated <br>
+            collection of modern and timeless home decor<br>
+            pieces</p>
+        <button id="ExploreNowBtn">Explore Now
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="second" style="position: relative;">
+        <img src="women3.jpg" alt="women" style="width: 100%; height: 300px; object-fit: cover; border-radius: 15px;">
+        <!-- Overlay Texts -->
+        <div style="position: absolute; top: 235px; left: 334px; color: rgb(85, 55, 64); font-size: 17px; font-weight: 700;  padding: 8px 16px; ">
+            100+ product""
+        </div>
+        <div style="position: absolute; bottom: 210px; left: 334px; color: rgb(85, 55, 64); font-size: 19px; font-weight: 700;  padding: 6px 14px; ">
+            jewelry
+        </div>
+        <p id="Description">Discover our exquisite collection of elegant<br>
+             jewelry pieces crafted for every style and<br>
+              occasion</p>
+        <button id="ExploreNowBtn">Explore Now
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- // MIDDLE SECTION -->
+
+<div class="middlesection" style="display: flex; flex-direction: column; gap: 32px; margin: 40px 0;">
+    <!-- Row 1 -->
+    <div class="middle-row" style="display: flex; gap: 24px;">
+        <div class="middle-item" >
+            <i class="fa-regular fa-heart" id="heart10"  ></i>
+            <img src="1st.webp" alt="Product 1" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 1<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$1200</p>
+            <div class="smallcoast">-20%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="nd.jpg" alt="Product 2" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 2<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$1100</p>
+            <div class="smallcoast">-55%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="3rd.webp" alt="Product 3" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 3<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$1000</p>
+            <div class="smallcoast">-20%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="4th.jpg" alt="Product 4" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 4<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$900
+            </p><div class="smallcoast">-20%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="5th.jpg" alt="Product 5" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 5<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$800</p>
+            <div class="smallcoast">-18%</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Row 2 -->
+    <div class="middle-row" style="display: flex; gap: 24px;">
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="6th.webp" alt="Product 6" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 6<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$700</p>
+            <div class="smallcoast">-30%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="7th.jpg" alt="Product 7" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 7<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$600</p>
+            <div class="smallcoast">-15%</div>
+        </div>
+        <div class="middle-item">
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="8th.jpg" alt="Product 8" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart   <i class="fa-solid fa-cart-shopping"></i></button>
+            <p>Description for Product 8<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$300</p>
+            <div class="smallcoast">-56%</div>
+        </div>
+        <div class="middle-item"   >
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="9th.jpeg" alt="Product 9" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart
+                   <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <p>Description for Product 9<br><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>$200</p>
+            <div class="smallcoast">-34%</div>
+        </div>
+        <div class="middle-item" style="position: relative;">
+            <!-- Heart Icon at Top Left -->
+            <i class="fa-regular fa-heart" id="heart10" ></i>
+            <img src="10th.webp" alt="Product 10" style="width: 100%; height: 180px; object-fit: cover;">
+            <button class="add-to-cart-btn" >Add to Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <p>Description for Product 10<br>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <br>$150
+            </p>
+            <div class="smallcoast">-20%</div>
+        </div>
+      
+    </div>
+</div>
+
+ 
+ <script src="landingpage.js"></script>
+</body>
+</html>
